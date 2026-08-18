@@ -45,7 +45,7 @@ function createPost() {
     posts.unshift(post);
     saveData();
     renderPosts();
-    addNotification(`${currentUser} "Guest is post something new"`);
+    addNotification(`${currentUser} "is post something new"`);
     document.getElementById('post-content').value = "";
     document.getElementById('post-media').value = "";
 }
