@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Network Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌐 SocialNet</h1>
+    <div class="nav">
+        <span id="notif-btn">🔔 <span id="notif-count">0</span></span>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+        <h3>User Profile</h3>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="setUser()">Save Profile</button>
+        <h4>Privacy Settings</h4>
+        <select id="default-privacy">
+            <option>Public</option>
+            <option>Friends</option>
+            <option>Private</option>
+        </select>
+    </div>
+
+    <!-- Main Feed -->
+    <div class="feed">
+        <div class="create-post">
+            <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+            <input type="file" id="post-media" accept="image/*,video/*">
+            <select id="privacy">
+                <option>Public</option>
+                <option>Friends</option>
+                <option>Private</option>
+            </select>
+            <button onclick="createPost()">Post</button>
+        </div>
+        <div id="posts-container"></div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="rightbar">
+        <h3>Notifications</h3>
+        <div id="notifications"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

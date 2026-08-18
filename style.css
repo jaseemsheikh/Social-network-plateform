@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial;
+}
+body {
+    background: #f0f2f5;
+}
+header {
+    background: #1877f2;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+header h1 { font-size: 24px; }
+.nav span { margin-left: 15px; cursor: pointer; font-size: 20px; }
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.sidebar,.rightbar {
+    width: 25%;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: fit-content;
+}
+.feed { width: 50%; }
+
+.sidebar input,.sidebar select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.sidebar button {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.create-post,.post {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.create-post textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    height: 80px;
+}
+#post-media, #privacy {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+}
+.create-post button {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.post-actions button {
+    background: #e4e6eb;
+    color: #000;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.post-actions button:hover { background: #d8dadf; }
+
+.comment-box { margin-top: 10px; }
+.comment-box input {
+    width: 75%;
+    padding: 6px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+.comment-box button {
+    padding: 6px 10px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.comment {
+    background: #f0f2f5;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+#post-media { margin-top: 10px; }
+.post img,.post video {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+#notifications p {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
